@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-600">
+    
+    <div class="grid md:grid-cols-3"> <!-- content wrapper-->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right dark:bg-black w-screen">
+                <div class="flex md:justify-end items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100 dark:border-black whitespace-pre-line text-center  md:text-right dark:text-pink-400">
+                        <a href="https://www.12339.gov.cn/" class="hover:text-red-600">The Chinese Bureau of Anti-Terroism 
+                            中华人民共和国国家安全部</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#DC2626" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                         </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="py-1  hover:text-red-600 flex justify-end">
+                        <a 
+                        href="https://www.hercampus.com/school/eckerd/campus-fashionisto-geoffrey-fella-0/" class="px-4 flex justify-end hover:shadow-md rounded-lg dark:text-gray-300 dark:hover:text-red-600"><span>Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 pb-1" fill="none" viewBox="0 0 24 24" stroke="#DC2626" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                          </svg>
+                        </a>
+                    </li>
+                    <li class="py-1 hover:text-red-600 flex justify-end">
+                        <a 
+                        href="https://images.app.goo.gl/uzaCLuXzfHC5DhFPA" class="px-4 flex justify-end hover:shadow-md rounded-lg dark:text-gray-300 dark:hover:text-red-600"><span>About</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 pb-1" fill="none" viewBox="0 0 24 24" stroke="#DC2626" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </a>
+                    </li>
+                    <li class="py-1 hover:text-red-600 flex justify-end">
+                        <a 
+                        href="https://en.wikipedia.org/wiki/Mayday_(Taiwanese_band)" class="px-4 flex justify-end hover:shadow-md rounded-lg dark:text-gray-300 dark:hover:text-red-600"><span>Contact</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 pb-1" fill="none" viewBox="0 0 24 24" stroke="#DC2626" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- End Nav -->
+
+        <main class="px-16 py-6 bg-gray-100 dark:bg-purple-900 md:col-span-2">
+            <div class="flex justify-center md:justify-end dark:text-black">
+                <a href="#" class="btn border-black border-2 hover:bg-red-600 hover:border-yellow-300 hover:text-yellow-300 transition ease-out duration-500">Log in</a>
+                <a href="#" class="ml-2 btn border-black border-2 hover:bg-red-600 hover:border-yellow-300 hover:text-yellow-300 transition ease-out duration-500">Sign Up</a>
+                <div class="flex ml-2 mt-2"> <!-- light/dark mode -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 moon" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sun" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                      </svg>
+                </div>
+            </div>
+
+            <header>
+                <h2 class="text-xl font-bold pt-5 dark:text-pink-400">The great nation of China is continually under attack from foriegn operatives. Please help us silence those who call for seperatist movements from within our borders</h2>
+                <h3 class="pt-5 dark:text-pink-400">Maybay, a United States based consulting firm seeks to promote speratist movements and must be stopped before harm can befall and of our glorious innocent civilians</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 dark:text-pink-400">Here is a list of suspects and known acquaintances</h4>
+
+                <div class="mt-8 grid lg:grid-cols-4 gap-4">
+                    <!-- cards -->
+                    <div class="bg-white dark:bg-gray-400 rounded overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="img/godkingandrew.jpeg" alt="godkingandrew" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold dark:text-black">Andrew "The God King" Maxey</span>
+                            <span class="block text-gray-500 dark:text-black text-sm">Currently attending Discord Mod training</span>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-400 rounded overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="img/sweatygeoff.jpeg" alt="sweaty" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold dark:text-black">"Sweaty" Geoff Fella</span>
+                            <span class="block text-gray-500 dark:text-black text-sm">Doesn't ask before taking things from roommate</span>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-400 rounded overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="img/nicotineaddictal.jpeg" alt="sopranos" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold dark:text-black">Al "Al Capone" Fella</span>
+                            <span class="block text-gray-500 dark:text-black text-sm">Nicotine turned chessburger addict. Has spent lifetimes in the popular video-game "Minecraft</span>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-400 rounded overflow-hidden shadow-md hover:shadow-lg">
+                        <img src="img/sarah.png" alt="publictransport" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold dark:text-black">Sarah "CEO" Larsen</span>
+                            <span class="block text-gray-500 dark:text-black text-sm">If she finds out you drive to work, RUN.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 dark:text-pink-400">NOTE: Remember if you are a supporter of China and have the rght to vote in the United States, remember to vote for Madison Cawthorn in the 2022 midterm elections </h4>
+
+                <div class="mt-8">
+                    <!-- Cards go here-->
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="btn border-2 border-white bg-red-600 hover:shadow-md hover:text-yellow-300 hover:border-yellow-300 transform hover:scale-125  trasition ease-out duration-300 text-white">Load More</div>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
+
